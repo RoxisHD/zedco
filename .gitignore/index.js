@@ -1,4 +1,10 @@
-const Discord = require('discord.js"');
-const bot = new Discord.Client()
+const Discord = require("discord.js");
 
-bot.login('NDM5NzYxMTQ2MDk5MTM4NTYx.DdI9-A.ycYPxYGRvMnmuVETe7P3uVg47tU')
+var bot = new Discord.Client();
+
+bot.on("ready", function() {
+    bot.user.setGame("Zedco, !help");
+    console.log("Le bot a bien été connecté");
+});
+
+bot.login("NDM5NzYxMTQ2MDk5MTM4NTYx.DdI9-A.ycYPxYGRvMnmuVETe7P3uVg47tU");
