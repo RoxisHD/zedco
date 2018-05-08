@@ -7,10 +7,4 @@ bot.on("ready", function() {
     console.log("Le bot a bien été connecté");
 });
 
-bot.on('ready', msg => {
-    if (msg.content === 'z!ping') {
-        msg.reply(Pong!);
-    }
-});
-
 bot.login("NDM5NzYxMTQ2MDk5MTM4NTYx.DdI9-A.ycYPxYGRvMnmuVETe7P3uVg47tU");
