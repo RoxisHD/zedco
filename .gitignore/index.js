@@ -8,9 +8,9 @@ bot.on("ready", function() {
     console.log("Le bot a bien été connecté");
 });
 
-client.on('message', msg => {
     if (msg.content === 'ping') {
       msg.reply('Pong!');
+      console.log("Ping Pong");
     }
 
     if (message.content === "z!ping"){
