@@ -18,4 +18,11 @@ client.on('message', msg => {
         console.log("Ping Pong");
     }
 
+    if (message.content === prefix + "z!help"){
+        message.channel.sendMessage("Voici les commmandes du bot : z!help : z!ping");
+        console.log("Commande Help demandée !");
+    }
+
+});
+
 bot.login("NDM5NzYxMTQ2MDk5MTM4NTYx.DdI9-A.ycYPxYGRvMnmuVETe7P3uVg47tU");
