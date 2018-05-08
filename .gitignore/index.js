@@ -9,3 +9,9 @@ bot.on("ready", function() {
 });
 
 bot.login("NDM5NzYxMTQ2MDk5MTM4NTYx.DdI9-A.ycYPxYGRvMnmuVETe7P3uVg47tU");
+
+client.on('message', msg => {
+    if (msg.content === 'ping') {
+      msg.reply('Pong!');
+    }
+  });
