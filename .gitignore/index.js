@@ -8,3 +8,10 @@ bot.on("ready", function() {
 });
 
 bot.login("NDM5NzYxMTQ2MDk5MTM4NTYx.DdI9-A.ycYPxYGRvMnmuVETe7P3uVg47tU");
+
+bot.on("message", message => {
+    if (message.content === "z!Ping"){
+        message.reply("Pong!");
+        console.log(" Ping Pong");
+    }
+});
